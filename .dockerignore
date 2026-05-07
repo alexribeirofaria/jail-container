@@ -1,0 +1,89 @@
+node_modules/
+**/node_modules/
+.git
+**/.git
+.gitignore
+*.log
+dist
+build
+tmp
+.cache
+**/.vscode
+.idea
+**/coverage/
+.env
+.env.*
+*.md
+**/.angular/
+**/.log_erros/
+
+# Byte-compiled / Python
+**/__pycache__/
+**/venv/
+**/.venv/
+**/env/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.pytest_cache/
+**/.mypy_cache/
+**/*.egg-info/
+
+# Node / Angular / NPM/Yarn
+**/node_modules/
+**/.angular/
+**/dist/
+**/out-tsc/
+**/coverage/
+**/test-results/
+**/playwright-report/
+**/npm-debug.log*
+**/yarn-error.log*
+**/package-lock.json  # Optional: regenerate in container
+
+# Build / Packaging
+**/build/
+**/tmp/
+**/.cache/
+**/.next/
+**/.nuxt/
+
+# IDE / Editors
+**/.vscode/
+**/.idea/
+**/.history/
+**/.c9/
+**/.sublime-workspace
+**/*.swp
+**/*.swo
+
+# Env / Secrets
+**/.env
+**/.env.*
+**/*.env
+**/*.key
+**/*.pem
+**/*.crt
+**/.claude/
+**/.openclaude/
+
+# Logs / Tests
+**/*.log
+**/logs/
+**/.log_erros/
+**/coverage/
+
+# OS / Misc
+**/.DS_Store
+**/Thumbs.db
+**/.sass-cache/
+**/connect.lock
+
+# Workspace / Project-specific
+**/monoRepo/
+**/..docs/
+**/*TODO*
+**/.ruff_cache
+
+# Git
+**/.git

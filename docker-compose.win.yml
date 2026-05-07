@@ -1,0 +1,31 @@
+services:
+  dev:
+    environment:
+      - PYTHONPYCACHEPREFIX=/tmp/pycache
+    container_name: ai-assistants-dev
+    build:
+      context: ../AI-Assistants
+      dockerfile: ../.devcontainer/Dockerfile
+    volumes:
+      - ../helpers-repo:/helpers-repo
+      - node_modules:/workspaces/angular-app/node_modules
+      - angular_cache:/workspaces/angular-app/.angular
+      - py_tmp:/tmp
+      - pip_cache:/root/.cache/pip
+    ports:
+      - "9877:9876"
+      - "5001:5000"
+      - "4201:4200"
+    command: /bin/bash -l
+    shm_size: "2g"
+    logging:
+      driver: json-file
+      options:
+        max-size: "2m"
+        max-file: "1"
+
+volumes:
+  node_modules:
+  angular_cache:
+  py_tmp:
+  pip_cache:

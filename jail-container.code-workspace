@@ -1,0 +1,106 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.autoSave": "afterDelay",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.inlineSuggest.enabled": false,
+    "editor.lightbulb.enabled": "off",
+    "editor.codeActions.triggerOnFocusChange": false,
+    "explorer.compactFolders": false,
+    "workbench.startupEditor": "none",
+    "yaml.format.enable": true,
+    "yaml.validate": true,
+    "json.format.enable": true,
+    "json.validate.enable": true,
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[yaml]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[yml]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-azuretools.vscode-containers",
+      "1tontech.angular-material",
+      "aeschli.vscode-css-formatter",
+      "alexiv.vscode-angular2-files",
+      "anthropic.claude-code",
+      "bierner.emojisense",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-emoji",
+      "blackboxapp.blackbox",
+      "blackboxapp.blackboxagent",
+      "cameron.vscode-pytest",
+      "charliermarsh.ruff",
+      "codezombiech.gitignore",
+      "cyrilletuzi.angular-schematics",
+      "donjayamanne.githistory",
+      "dotjoshjohnson.xml",
+      "dzhavat.bracket-pair-toggler",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "github.github-vscode-theme",
+      "github.vscode-github-actions",
+      "gruntfuggly.todo-tree",
+      "gydunhn.angular-essentials",
+      "gydunhn.javascript-essentials",
+      "gydunhn.typescript-essentials",
+      "ibm.output-colorizer",
+      "infinity1207.angular2-switcher",
+      "john-crowson.angular-file-changer",
+      "johnpapa.angular-essentials",
+      "johnpapa.angular2",
+      "marinhobrandao.angular2tests",
+      "mechatroner.rainbow-csv",
+      "mgesbert.python-path",
+      "mhutchie.git-graph",
+      "ms-python.isort",
+      "ms-python.mypy-type-checker",
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "natewallace.angular2-inline",
+      "njqdev.vscode-python-typehint",
+      "oderwat.indent-rainbow",
+      "shd101wyy.markdown-preview-enhanced",
+      "tombonnike.vscode-status-bar-format-toggle",
+      "yzhang.markdown-all-in-one",
+      "zainchen.json",
+      "openai.chatgpt"
+    ],
+    "unwantedRecommendations": [
+      "DavidAnson.vscode-markdownlint",
+      "ms-vscode-remote.remote-containers",
+      "fractalbrew.backticks",
+      "aaron-bond.better-comments",
+      "alefragnani.bookmarks",
+      "formulahendry.code-runner",
+      "arthurlobo.easy-codesnap",
+      "nickdemayo.vscode-json-editor",
+      "christian-kohler.npm-intellisense",
+      "nrwl.angular-console",
+      "quicktype.quicktype",
+      "johnpapa.vscode-peacock",
+      "flyfly6.terminal-in-status-bar",
+      "mattpocock.ts-error-translator",
+      "pmneo.tsimporter",
+      "johnpapa.winteriscoming"
+    ]
+  }
+}
