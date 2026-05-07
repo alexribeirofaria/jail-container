@@ -1,6 +1,11 @@
 {
   "folders": [
     {
+      "name": "angular-app",
+      "path": "../AI-Assistants/angular-app"
+    },
+    {
+      "name": ".devcontainer",
       "path": "."
     }
   ],
