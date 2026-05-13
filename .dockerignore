@@ -79,7 +79,7 @@ tmp
 **/.sass-cache/
 **/connect.lock
 
-# Workspace / Project-specific
+# Workspace
 **/monoRepo/
 **/..docs/
 **/*TODO*
