@@ -1,11 +1,11 @@
 {
   "folders": [
     {
-      "name": "angular-app",
-      "path": "../AI-Assistants/angular-app"
+      "name": "workspaces",
+      "path": "."
     },
     {
-      "name": ".devcontainer",
+      "name": ".jail-container",
       "path": "."
     }
   ],

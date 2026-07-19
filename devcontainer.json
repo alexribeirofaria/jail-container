@@ -1,8 +1,0 @@
-{
-  "name": "Ai Assistants",
-  "dockerComposeFile": "docker-compose.yml",
-  "service": "dev",
-  "workspaceFolder": "/workspaces",  
-  "remoteUser": "node",
-  "overrideCommand": false
-}
