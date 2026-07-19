@@ -1,0 +1,42 @@
+services:
+  dev:
+    container_name: jail-container
+    image: alexfariakof/jail-container:latest
+    volumes:
+      - ../workspace:/workspaces:cached
+      - vscode-extensions:/home/node/.vscode-server/extensions
+      - node_modules:/workspaces/node_modules
+      - angular_cache:/workspaces/.angular
+      - py_tmp:/tmp
+      - pip_cache:/root/.cache/pip
+
+    ports:
+      - "9877:9876"
+      - "5001:5000"
+      - "4201:4200"
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_ADMIN
+    security_opt:
+      - apparmor=unconfined
+      - seccomp:unconfined
+    command: sleep infinity
+    shm_size: "2g"
+    logging:
+      driver: json-file
+      options:
+        max-size: "2m"
+        max-file: "1"
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+        reservations:
+          memory: 4G
+
+volumes:
+  node_modules:
+  angular_cache:
+  py_tmp:
+  pip_cache:
