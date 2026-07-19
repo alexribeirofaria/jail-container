@@ -10,7 +10,7 @@
 - [Objetivos](#objetivos)
 - [Analise Tecnica](#analise-tecnica)
 - [Arquitetura](#arquitetura)
-- [Diagramas Mermaid](#diagramas-mermaid)
+- [Diagramas ](#diagramas)
 - [Estrutura do Repositorio](#estrutura-do-repositorio)
 - [Componentes Docker](#componentes-docker)
 - [Dev Container](#dev-container)
@@ -91,7 +91,7 @@ O projeto funciona como uma camada de controle entre o host e o ambiente onde ag
 | Runtime | Container `dev` | Executa agentes de IA, comandos, servidores locais, testes e builds. |
 | Workspace | `/workspaces` e volumes | Delimita os arquivos acessiveis pelo container. |
 
-## Diagramas Mermaid
+## Diagramas
 
 ### Arquitetura de Isolamento
 
