@@ -1,24 +1,27 @@
 services:
   dev:
-    environment:
-      - PYTHONPYCACHEPREFIX=/tmp/pycache
-
-    container_name: ai-assistants-dev
+    container_name: jail-container
     image: alexfariakof/jail-container:latest
-    build:
-      context: ../AI-Assistants
-      dockerfile: ../.devcontainer/Dockerfile
     volumes:
-      - ../helpers-repo:/helpers-repo
-      - node_modules:/workspaces/angular-app/node_modules
-      - angular_cache:/workspaces/angular-app/.angular
+      - ../workspace:/workspaces:cached
+      - vscode-extensions:/home/node/.vscode-server/extensions
+      - node_modules:/workspaces/node_modules
+      - angular_cache:/workspaces/.angular
       - py_tmp:/tmp
       - pip_cache:/root/.cache/pip
+
     ports:
       - "9877:9876"
       - "5001:5000"
       - "4201:4200"
-    command: /bin/bash  -l
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_ADMIN
+    security_opt:
+      - apparmor=unconfined
+      - seccomp:unconfined
+    command: sleep infinity
     shm_size: "2g"
     logging:
       driver: json-file
